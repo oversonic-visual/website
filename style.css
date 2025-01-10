@@ -1,0 +1,400 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.container-hero {
+	height: 100vh;
+    position: relative;
+    background: #afc0d4 center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.container-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* Inherit background properties */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background 0s; /* Nessuna transizione sul cambio immagine */
+}
+
+/* Cambia il background image per ogni step */
+.step-1 .container-hero::before {
+    background-image: url(../images/001.png);
+    animation: zoom-in-background 8s linear infinite;
+}
+.step-2 .container-hero::before {
+    background-image: url(../images/002.png);
+    animation: zoom-out-background 8s linear infinite;
+}
+.step-3 .container-hero::before {
+    background-image: url(../images/003.png);
+    animation: zoom-in-background 8s linear infinite;
+}
+.step-4 .container-hero::before {
+    background-image: url(../images/002.png);
+    animation: zoom-out-background 8s linear infinite;
+}
+@keyframes zoom-in-background {
+    0% {
+        transform: scale(1.07); /* Dimensione iniziale */
+    }
+    100% {
+        transform: scale(1.17); /* Zoom finale */
+    }
+}
+@keyframes zoom-out-background {
+    0% {
+        transform: scale(1.17); /* Dimensione iniziale */
+    }
+    100% {
+        transform: scale(1.07); /* Zoom finale */
+    }
+}
+.container-hero > .container-fluid {
+	background: linear-gradient(to bottom, rgba(17,17,17,0), rgba(17,17,17,1));
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.2em;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 470px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.container-hero > .container-fluid .col-xxl-10 .col-lg-4 {
+	padding-right: 80px;
+	padding-bottom: 16px;
+	height: 120px;
+}
+.container-hero > .container-fluid .col-xxl-2 {
+	font-size: 40px;
+	padding-bottom: 16px;
+}
+.container-hero > .container-fluid .r19 {
+	font-size: 40px;
+	line-height: 1em;
+	display: block;
+	margin-bottom: 8px;
+}
+.container-hero > .container-fluid .r19 em {
+	opacity: 0.3;
+}
+.container-hero > .container-fluid .r19 em.active {
+	opacity: 1;
+}
+.mobile-menu-opener {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background-color: #111;
+    border-radius: 8px;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    transition: right 0.5s;
+}
+.mobile-menu-closer {
+    position: absolute;
+    top: 36px;
+    right: 36px;
+    border-radius: 100px;
+    padding: 16px;
+    background-color: #222;
+}
+body.show-menu {
+	overflow: hidden;
+}
+.show-menu .mobile-menu-opener {
+	right: -120px;
+}
+.main-menu {
+    position: fixed;
+    top: 0;
+    left: -110vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    color: #fff;
+    z-index: 10;
+    transition: left 0.5s;
+    overflow: auto;
+}
+.show-menu .main-menu {
+	left: 0;
+}
+.main-menu .logo-oversonic {
+    display: block;
+    padding: 40px;
+}
+#accordion-main-menu > div > span,
+.main-menu > .main-menu-item {
+    border-bottom: 1px solid #222;
+    padding: 16px 40px;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+#accordion-main-menu > div > span:after {
+	content: '';
+	position: absolute;
+	right: 40px;
+	top: 24px;
+	display: block;
+	width: 10px;
+	height: 6px;
+	background: transparent url(../images/triangle.svg) no-repeat;
+}
+#accordion-main-menu > div > span[aria-expanded="true"]:after {
+	transform: rotate(180deg);
+}
+#accordion-main-menu > div > span:hover,
+.main-menu > .main-menu-item:hover {
+	background-color: #222;
+}
+.sub-menu {
+	background-color: #222;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.sub-menu a {
+	display: block;
+	text-decoration: none;
+	color: #aaa;
+	padding: 12px 40px;
+	font-size: 12px;
+}
+.sub-menu a:hover {
+	color: #fff;
+}
+.robot-data {
+	background-color: #111;
+	color: #fff;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.robot-data-white {
+	padding-bottom: 0;
+	color: #111;
+	background-color: #fff;
+}
+.robot-data .col-xxl-2, .robot-data .col-lg-4 {
+	padding-bottom: 32px;
+}
+.robot-data h2 {
+	font-size: 64px;
+	line-height: 1.2em;
+	margin: 0;
+}
+.robot-data a {
+	text-decoration: none;
+	color: #999;
+	font-weight: 300;
+}
+.row-tr {
+	border-bottom: 1px solid #222;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: 0;
+}
+.cell-title {
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: 12px;
+}
+.cell-key {
+	font-size: 12px;
+	color: #999;
+	padding: 1px 0 0 0;
+}
+.cell-value {
+	font-size: 14px;
+	padding: 0;
+}
+
+.section-txt-block,
+.section-media-block,
+footer,
+.footer-section {
+	padding-top: 64px;
+}
+.section-keyword {
+    padding-bottom: 8px;
+}
+.main-content h2 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+.main-content p {
+	margin-bottom: 24px;
+	font-weight: 300;
+}
+.media-container {
+	padding: 0;
+}
+.media-container video {
+	width: 100%;
+	display: block;
+}
+footer {
+	background-color: #111;
+	color: #fff;
+	padding-bottom: 64px;
+	margin-top: 64px;
+}
+footer a {
+	color: #999;
+	text-decoration: none;
+}
+footer .cell-value a {
+	color: #fff;
+}
+section a:hover,
+footer a:hover {
+	color: #0abbb5;
+}
+.social-icons {
+    padding-bottom: 40px;
+}
+.social-icons a {
+    display: inline-block;
+    background-color: #111;
+    border: 1px solid #fff;
+    padding: 12px;
+    border-radius: 100px;
+    margin-right: 6px;
+}
+.social-icons a:hover {
+	filter: invert(100%);
+}
+.social-icons a img {
+	width: 36px;
+	height: 36px;
+}
+.footer-section.tagline {
+	display: none;
+}
+.main-content p.footer-disclaimer {
+	font-size: 12px;
+	color: #999;
+	padding-top: 40px;
+}
+@media (min-width: 576px) {
+	.container-hero > .container-fluid {
+		height: 272px;
+	}
+}
+@media (min-width: 992px) {
+	.mobile-menu-opener,
+	.mobile-menu-closer {
+		display: none;
+	}
+	.container-hero > .container-fluid {
+		background: linear-gradient(to bottom, rgba(17,17,17,0), rgba(17,17,17,0.5));
+		font-size: 24px;
+		line-height: 1.1em;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.show-menu .main-menu {
+		left: 16px;
+	}
+	.main-menu {
+	    top: 12px;
+	    left: 12px;
+	    width: 256px;
+	    height: auto;
+	    border-radius: 8px;
+	    padding-bottom: 32px;
+	    border: 1px solid rgba(255,255,255,0.15);
+	}
+	#accordion-main-menu > div > span,
+	.main-menu > .main-menu-item {
+	    padding: 12px 24px;
+	}
+	.sub-menu a {
+		padding: 6px 24px;
+	}
+	#accordion-main-menu > div > span:after {
+		top: 19px;
+		right: 24px;
+	}
+	.container-hero > .container-fluid .col-xxl-10 .col-lg-4 {
+		height: auto;
+	}
+	.container-hero > .container-fluid .col-xxl-2 {
+		line-height: 1em;
+	}
+	.robot-data {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+	.robot-data-white {
+		padding-bottom: 0;
+	}
+}
+@media (min-width: 1400px) {
+	.container-hero > .container-fluid {
+		height: 240px;
+	}
+	.robot-data {
+		padding-top: 80px;
+		padding-bottom: 74px;
+		margin-bottom: 24px;
+	}
+	.robot-data-white {
+		padding-bottom: 0px;
+		margin-bottom: 0;
+	}
+	.section-txt-block,
+	.section-media-block,
+	footer {
+		padding-top: 80px;
+		margin-top: 80px;
+	}
+	.section-keyword {
+		font-size: 18px;
+		font-weight: 300;
+	}
+	.main-content h2 {
+		font-size: 48px;
+		padding-right: 80px;
+	    letter-spacing: -1.5px;
+	    line-height: 1.1em;
+	    margin-bottom: 24px;
+	}
+	.main-content p {
+		font-size: 24px;
+	}
+	footer {
+		padding-bottom: 0;
+	}
+	.footer-section.tagline {
+		display: flex;
+		background-color: #fff;
+		color: #111;
+		padding-top: 120px;
+		padding-bottom: 120px;
+		margin-top: 80px;
+		font-size: 18px;
+		letter-spacing: 16px;
+
+		background-image: url('../images/bg-footer.jpg'); /* Sostituisci con il percorso della tua immagine */
+		background-position: right 120px center; /* Allinea l'immagine a destra con un margine di 120px */
+		background-repeat: no-repeat; /* Impedisce che l'immagine si ripeta */
+		background-size: auto 100%;
+	}
+}
