@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oversonic Robotics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="main-menu">
+      <a class="logo-oversonic"><img alt="" src="images/logo-oversonic.svg"></a>
+      <div class="mobile-menu-closer" id="mobile-menu-closer"><img alt="" src="images/back.svg"></div>
+      <div id="accordion-main-menu">
+        <div>
+          <span data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Products
+          </span>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-main-menu">
+            <div class="sub-menu">
+              <a href="">Robee R-Serie</a>
+              <a href="">RoBee M-Serie</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Applications
+          </span>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-main-menu">
+            <div class="sub-menu">
+              <a href="">Industry</a>
+              <a href="">Textile</a>
+              <a href="">Healthcare</a>
+              <a href="">Education</a>
+              <a href="">Aerospace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="main-menu-item" href="">About us</a>
+      <a class="main-menu-item" href="">Certifications</a>
+      <a class="main-menu-item" href="">Contacts</a>
+
+    </div><!-- .main menu -->
+
+    <div class="mobile-menu-opener" id="mobile-menu-opener">
+      <img alt="" src="images/marchio-oversonic.svg">
+      <img alt="" src="images/menu.svg">
+    </div>
+
+    <section class="container-fluid container-hero">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xxl-2">
+            
+          </div>
+          <div class="col-xxl-10">
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <span class="r19">RoBee</span>
+                Humanoid Robot by Oversonic.
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <span class="r19">R19</span>
+                <span id="txt1"></span>
+              </div>
+              <div class="col-lg-4">
+                <span class="r19"><em id="n1">—</em><em id="n2">—</em><em id="n3">—</em><em id="n4">—</em></span>
+                <span id="txt2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- .container-hero -->
+
+    <section class="container-fluid robot-data">
+      <div class="row">
+          <div class="col-xxl-2">
+            <h2>R19</h2>
+            <a href="">Read full specifications —</a>
+          </div>
+          <div class="col-xxl-10">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="col cell-title">
+                    Body
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Weight
+                  </div>
+                  <div class="col cell-value">
+                    Up to 180 kg
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Height
+                  </div>
+                  <div class="col cell-value">
+                    165 — 190 cm
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Footprint
+                  </div>
+                  <div class="col cell-value">
+                    69 * 78 cm
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="col cell-title">
+                    Manipulation
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Cognitive accuracy
+                  </div>
+                  <div class="col cell-value">
+                    3 mm
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Deterministic accuracy
+                  </div>
+                  <div class="col cell-value">
+                    1 mm
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Repeatability
+                  </div>
+                  <div class="col cell-value">
+                    0.8 mm
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="col cell-title">
+                    Navigation
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Maximum speed
+                  </div>
+                  <div class="col cell-value">
+                    1.2 m/s
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Maximum slope
+                  </div>
+                  <div class="col cell-value">
+                    8%
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Differential drive
+                  </div>
+                  <div class="col cell-value">
+                    Included
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- .robot-data -->
+
+    <section class="container-fluid section-txt-block">
+      <div class="row">
+        <div class="col-xxl-2 section-keyword">
+          Section keyword —
+        </div>
+        <div class="col-xxl-10 section-content">
+          <div class="row">
+            <div class="col-lg-8 main-content">
+              <h2>This is the section main content title</h2>
+              <p>Section content txt. Quando un uomo con la pistola incontra un uomo col fucile, quello con la pistola è un uomo morto.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices in diam eu venenatis. Maecenas eu lorem gravida, maximus arcu sed, dictum enim. Mauris in eleifend dolor.</p>
+            </div>
+            <div class="col-lg-4 side-content">
+              <div class="row">
+                <div class="col cell-title">
+                  Side table title
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-key">
+                  Maximum speed
+                </div>
+                <div class="col cell-value">
+                  1.2 m/s
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-key">
+                  Maximum slope
+                </div>
+                <div class="col cell-value">
+                  8%
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-key">
+                  Differential drive
+                </div>
+                <div class="col cell-value">
+                  Included
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- .section-txt-block -->
+
+    <section class="container-fluid section-txt-block">
+      <div class="row">
+        <div class="col-xxl-2 section-keyword">
+          Section keyword —
+        </div>
+        <div class="col-xxl-10 section-content">
+          <div class="row">
+            <div class="col-lg-8 main-content">
+              <p>Sezione senza titolo. Section content txt. Quando un uomo con la pistola incontra un uomo col fucile, quello con la pistola è un uomo morto.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices in diam eu venenatis. Maecenas eu lorem gravida, maximus arcu sed, dictum enim. Mauris in eleifend dolor.</p>
+            </div>
+            <div class="col-lg-4 side-content">
+              <div class="row">
+                <div class="col cell-title">
+                  Side table title
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-key">
+                  Maximum speed
+                </div>
+                <div class="col cell-value">
+                  1.2 m/s
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-key">
+                  Maximum slope
+                </div>
+                <div class="col cell-value">
+                  8%
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-key">
+                  Differential drive
+                </div>
+                <div class="col cell-value">
+                  Included
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- .section-txt-block -->
+
+    <section class="container-fluid section-media-block">
+      <div class="row">
+        <div class="col-xxl-2"></div>
+        <div class="col-xxl-10 media-container">
+          <video autoplay muted loop>
+            <source src="video/r19-mix.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid robot-data robot-data-white">
+      <div class="row">
+          <div class="col-xxl-2">
+            <h2>R19</h2>
+            <a href="">Read full specifications —</a>
+          </div>
+          <div class="col-xxl-10">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="col cell-title">
+                    Body
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Weight
+                  </div>
+                  <div class="col cell-value">
+                    Up to 180 kg
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Height
+                  </div>
+                  <div class="col cell-value">
+                    165 — 190 cm
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Footprint
+                  </div>
+                  <div class="col cell-value">
+                    69 * 78 cm
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="col cell-title">
+                    Manipulation
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Cognitive accuracy
+                  </div>
+                  <div class="col cell-value">
+                    3 mm
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Deterministic accuracy
+                  </div>
+                  <div class="col cell-value">
+                    1 mm
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Repeatability
+                  </div>
+                  <div class="col cell-value">
+                    0.8 mm
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="col cell-title">
+                    Navigation
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Maximum speed
+                  </div>
+                  <div class="col cell-value">
+                    1.2 m/s
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Maximum slope
+                  </div>
+                  <div class="col cell-value">
+                    8%
+                  </div>
+                </div>
+                <div class="row row-tr">
+                  <div class="col cell-key">
+                    Differential drive
+                  </div>
+                  <div class="col cell-value">
+                    Included
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- .robot-data -->
+
+    <section class="container-fluid section-media-block">
+      <div class="row">
+        <div class="col-xxl-2"></div>
+        <div class="col-xxl-10">
+          <div class="row">
+            <div class="col-lg-4 media-container"><img alt="" class="img-fluid" src="images/front.png"></div>
+            <div class="col-lg-4 media-container"><img alt="" class="img-fluid" src="images/traslazione.png"></div>
+            <div class="col-lg-4 media-container"><img alt="" class="img-fluid" src="images/squat-compare.png"></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- .section-media-block -->
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-xxl-2 section-keyword">
+          Headquarters —
+        </div>
+        <div class="col-xxl-10">
+          <div class="row">
+            <div class="col-lg-8 main-content">
+              <h2>Where we are</h2>
+              <p><a href="https://maps.app.goo.gl/aie6tWmY4AFqgCDh8" target="_blank">Via Galeazzo Viganò 7<br>20841 Carate Brianza, MB, Italy <small>&larr; map</small></a></p>
+            </div>
+            <div class="col-lg-4 side-content">
+              <div class="row">
+                <div class="col cell-title">
+                  Contacts
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col-4 col-xxl-6 cell-key">
+                  Email
+                </div>
+                <div class="col-8 col-xxl-6 cell-value">
+                  <a href="mailto:info@oversonicrobotics.com">info@oversonicrobotics.com</a>
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col-4 col-xxl-6 cell-key">
+                  Phone
+                </div>
+                <div class="col-8 col-xxl-6 cell-value">
+                  <a href="tel:+39%200362%20080120" target="_blank">+39 0362 080120</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footer-section">
+        <div class="col-xxl-2 section-keyword">
+          Social —
+        </div>
+        <div class="col-xxl-10">
+          <div class="row">
+            <div class="col-lg-8 main-content">
+              <h2>Follow us</h2>
+              <p class="social-icons">
+                <a href=""><img alt="" src="images/ico-linkedin.svg"></a>
+                <a href=""><img alt="" src="images/ico-instagram.svg"></a>
+                <a href=""><img alt="" src="images/ico-youtube.svg"></a>
+              </p>
+              <p class="footer-disclaimer">&copy; 2004 Ovesonic Robotics Srl Società Benefit - All rights reserved - VAT/P.IVA 11470500965</p>
+            </div>
+            <div class="col-lg-4 side-content">
+              <div class="row">
+                <div class="col cell-title">
+                  Privacy center
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-value">
+                  <a href="">Privacy policy</a>
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-value">
+                  <a href="">Cookie policy</a>
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-value">
+                  <a href="">Condizioni generali di vendita</a>
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-value">
+                  <a href="">Codice etico</a>
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-value">
+                  <a href="">Modello organizzativo</a>
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-value">
+                  <a href="">Relazione d'impatto 2023</a>
+                </div>
+              </div>
+              <div class="row row-tr">
+                <div class="col cell-value">
+                  <a href="">Whistleblowing</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footer-section tagline">
+        <div class="col-xxl-2 section-keyword">
+        
+        </div>
+        <div class="col-xxl-10">
+          ROBOTICS FOR HUMANS
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/frontend.js"></script>
+  </body>
+</html>
