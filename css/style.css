@@ -222,7 +222,6 @@ body.show-menu {
 	font-size: 14px;
 	padding: 0;
 }
-
 .section-txt-block,
 .section-media-block,
 footer,
@@ -240,6 +239,10 @@ footer,
 }
 .main-content p {
 	margin-bottom: 24px;
+	font-weight: 300;
+}
+.side-content-txt {
+	font-size: 14px;
 	font-weight: 300;
 }
 .media-container {
@@ -290,7 +293,6 @@ footer a:hover {
 .main-content p.footer-disclaimer {
 	font-size: 12px;
 	color: #999;
-	padding-top: 40px;
 }
 @media (min-width: 576px) {
 	.container-hero > .container-fluid {
@@ -391,7 +393,7 @@ footer a:hover {
 		margin-top: 80px;
 		font-size: 18px;
 		letter-spacing: 16px;
-
+		font-weight: 300;
 		background-image: url('../images/bg-footer.jpg'); /* Sostituisci con il percorso della tua immagine */
 		background-position: right 120px center; /* Allinea l'immagine a destra con un margine di 120px */
 		background-repeat: no-repeat; /* Impedisce che l'immagine si ripeta */
