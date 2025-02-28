@@ -488,3 +488,9 @@ footer .social-icon:hover img {
 		padding-bottom: 14px;
 	}
 }
+@media (max-width: 480px) {
+	.media-container.mobile-optimized video {
+		height: 480px;
+		object-fit: cover;
+	}
+}
