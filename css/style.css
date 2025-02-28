@@ -138,7 +138,7 @@ body.show-menu {
     overflow: hidden;
 }
 .typing-data {
-	height: 300px;
+	height: 350px;
 	position: relative;
 	margin-top: -350px;
 	z-index: 3;
