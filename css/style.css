@@ -138,9 +138,9 @@ body.show-menu {
     overflow: hidden;
 }
 .typing-data {
-	height: 300px; /* 200px; */
+	height: 300px;
 	position: relative;
-	margin-top: -300px;
+	margin-top: -350px;
 	z-index: 3;
 }
 .typing-data .content {
@@ -345,7 +345,7 @@ footer .social-icon:hover img {
 	text-align: center;
 	background-color: #1a1d21;
 	color: #eaeff4;
-	padding: 32px 0;
+	padding: 32px;
 }
 .coda h4 {
 	text-transform: uppercase;
