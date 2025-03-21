@@ -555,7 +555,7 @@ footer .form-check-input:checked {
 @media (min-width: 1400px) {
 	h2 {
 		font-size: 96px;
-		letter-spacing: -1px;
+		letter-spacing: -3px;
 		margin-bottom: 2rem;
 		line-height: 1;
 	}
