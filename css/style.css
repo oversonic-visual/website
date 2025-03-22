@@ -550,6 +550,9 @@ footer .form-check-input:checked {
 	.main-menu .logo-oversonic {
 		padding: 40px;
 	}
+	.main-menu .logo-oversonic:hover {
+		background-color: #1a1d21;
+	}
 	.hero {
 		height: calc(100vh - 100px);
 	}
