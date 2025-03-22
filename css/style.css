@@ -371,27 +371,22 @@ footer .form-control {
 	border-bottom: 1px solid #555 !important;
 	padding: 4px 0;
 }
-
 footer input::placeholder {
     color: #888 !important;
     opacity: 1;
 }
-
 footer input::-webkit-input-placeholder {
     color: #888 !important;
     opacity: 1;
 }
-
 footer input:-moz-placeholder {
     color: #888 !important;
     opacity: 1;
 }
-
 footer input::-moz-placeholder {
     color: #888 !important;
     opacity: 1;
 }
-
 footer input:-ms-input-placeholder {
     color: #888 !important;
     opacity: 1;
@@ -401,10 +396,70 @@ footer input[type="email"]:focus {
 	background: none;
 	border-bottom: 1px solid #fff !important;
 }
-footer .form-check {
+.oversonic-form-check {
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
+.oversonic-form-check input {
+	opacity: 0;
+}
+.oversonic-form-check em {
+	display: block;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #888;
+	border-radius: 5px;
+}
+
+
+
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.checkbox-custom {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.checkbox-custom::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #0abbb5;
+    display: none;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked + .checkbox-custom {
+
+}
+
+input[type="checkbox"]:checked + .checkbox-custom::after {
+    display: block;
+}
+
+
+
 footer .privacy {
 	font-size: 12px;
 	color: #888;
