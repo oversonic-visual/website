@@ -1,5 +1,8 @@
-body {
+body,
+.table,
+.table>:not(caption)>*>*  {
     font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
+    color: #23262a;
 }
 a {
 	text-decoration: none;
@@ -12,9 +15,9 @@ h2 {
 .btn {
 	transition: none;
 	border-radius: 0;
-	background-color: #1a1d21;
+	background-color: #111;
 	border: none;
-	color: #eaeff4;
+	color: #eaeef5;
 	width: 100%;
 	padding: 16px 32px;
 	border-radius: 6px;
@@ -28,8 +31,8 @@ section .standard-content .btn {
 	margin-top: 32px;
 }
 .btn:hover {
-	background-color: #eaff13;
-	color: #111;
+	background-color: #23262a;
+	color: #fff;
 }
 input:focus, textarea:focus, select:focus {
   box-shadow: none !important;
@@ -44,7 +47,7 @@ input:focus, textarea:focus, select:focus {
 	left: -102vw;
 	width: 100vw;
 	height: 100vh;
-	color: #eaeff4;
+	color: #eaeef5;
 	background-color: #111;
 	transition: left 0.5s;
 	z-index: 20;
@@ -85,7 +88,7 @@ input:focus, textarea:focus, select:focus {
     font-size: 16px;
     display: block;
     cursor: pointer;
-    color: #eaeff4;
+    color: #eaeef5;
     text-decoration: none;
     position: relative;
 }
@@ -104,10 +107,10 @@ input:focus, textarea:focus, select:focus {
 }
 #accordion-main-menu > div > span:hover,
 .main-menu .main-menu-item:hover {
-	background-color: #1a1d21;
+	background-color: #23262a;
 }
 .sub-menu {
-	background-color: #1a1d21;
+	background-color: #23262a;
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
@@ -142,7 +145,7 @@ input:focus, textarea:focus, select:focus {
     right: 36px;
     border-radius: 100px;
     padding: 16px;
-    background-color: #1a1d21;
+    background-color: #23262a;
 }
 .show-menu .main-menu {
 	left: 0;
@@ -248,7 +251,7 @@ body.show-menu {
 }
 .table-black {
 	background-color: #111;
-	color: #eaeff4;
+	color: #eaeef5;
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
@@ -299,7 +302,7 @@ body.show-menu {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	color: #eaeff4;
+	color: #eaeef5;
 	height: 500px;
 }
 .carousel-item .col-lg-3 p {
@@ -347,7 +350,6 @@ body.show-menu {
 }
 .carousel-indicators [data-bs-target]:hover {
 	opacity: 1;
-	background-color: #eaff13;
 }
 .carousel-indicators .active,
 .carousel-indicators .active:hover {
@@ -356,7 +358,7 @@ body.show-menu {
 }
 footer, footer .side {
 	background-color: #111;
-	color: #eaeff4;
+	color: #eaeef5;
 }
 footer .standard-content {
 	font-size: 14px;
@@ -366,7 +368,7 @@ footer label {
 }
 footer .form-control {
 	background: none;
-	color: #eaeff4 !important;
+	color: #eaeef5 !important;
 	border: none !important;
 	border-bottom: 1px solid #555 !important;
 	padding: 4px 0;
@@ -396,31 +398,12 @@ footer input[type="email"]:focus {
 	background: none;
 	border-bottom: 1px solid #fff !important;
 }
-.oversonic-form-check {
-	padding-top: 16px;
-	padding-bottom: 16px;
-}
-.oversonic-form-check input {
-	opacity: 0;
-}
-.oversonic-form-check em {
-	display: block;
-	width: 24px;
-	height: 24px;
-	border: 1px solid #888;
-	border-radius: 5px;
-}
-
-
-
-
 input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
-
 .checkbox-container {
     display: flex;
     align-items: center;
@@ -429,7 +412,6 @@ input[type="checkbox"] {
     padding-top: 24px;
     padding-bottom: 12px;
 }
-
 .checkbox-custom {
     width: 24px;
     height: 24px;
@@ -440,7 +422,6 @@ input[type="checkbox"] {
     justify-content: center;
     margin-right: 12px;
 }
-
 .checkbox-custom::after {
     content: "";
     width: 16px;
@@ -449,22 +430,22 @@ input[type="checkbox"] {
     display: none;
     border-radius: 3px;
 }
-
 input[type="checkbox"]:checked + .checkbox-custom {
 
 }
-
 input[type="checkbox"]:checked + .checkbox-custom::after {
     display: block;
 }
-
-
-
 footer .privacy {
 	font-size: 12px;
 	color: #888;
 	text-align: justify;
 	margin-bottom: 32px;
+}
+footer .btn {
+	border: 1px solid #555;
+	font-size: 14px;
+	padding: 8px 24px;
 }
 footer h5 {
 	margin-bottom: 16px;
@@ -476,23 +457,10 @@ footer a {
 footer a:hover {
 	color: #fff;
 }
-footer .form-check-input {
-	background-color: rgba(255, 255, 255, 0.3);
-	border: 1px solid transparent;
-}
-footer .form-check-input:focus {
-	border-color: transparent;
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
-}
-footer .form-check-input:checked {
-	background-color: rgba(255, 255, 255, 0.3);
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-	border: 1px solid transparent;
-}
 .coda {
 	text-align: center;
-	background-color: #1a1d21;
-	color: #eaeff4;
+	background-color: #23262a;
+	color: #eaeef5;
 	padding: 32px;
 }
 .coda h4 {
@@ -539,7 +507,7 @@ footer .form-check-input:checked {
 	.side {
 		display: block;
 		width: 270px;
-		background-color: #eaeff4;
+		background-color: #eaeef5;
 	}
 	.standard-side {
 	    padding-top: 48px;
@@ -551,7 +519,7 @@ footer .form-check-input:checked {
 		padding: 40px;
 	}
 	.main-menu .logo-oversonic:hover {
-		background-color: #1a1d21;
+		background-color: #23262a;
 	}
 	.hero {
 		height: calc(100vh - 100px);
@@ -651,8 +619,9 @@ footer .form-check-input:checked {
 		bottom: 96px;
 	}
 	.carousel:hover .carousel-indicators [data-bs-target] {
-		margin-right: 1px;
-		opacity: 1;
+		margin-right: 8px;
+		height: 8px;
+		border-radius: 20px;
 	}
 	footer .standard-content,
 	footer .standard-side {
