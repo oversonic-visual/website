@@ -95,7 +95,7 @@ document.getElementById('mobile-menu-closer').addEventListener('click', function
 
 
 
-const scrollThreshold = 400; // Soglia per l'attivazione di scroll-down
+const scrollThreshold = 800; // Soglia per l'attivazione di scroll-down
 const upThreshold = 200; // Soglia per l'attivazione di scroll-up
 let lastScrollTop = 0;
 let hasPassedThreshold = false; // Flag per verificare se abbiamo superato la soglia
