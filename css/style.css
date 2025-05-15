@@ -166,9 +166,9 @@ body.show-menu {
     overflow: hidden;
 }
 .typing-data {
-	height: 200px;
+	height: 240px;
 	position: relative;
-	margin-top: -200px;
+	margin-top: -240px;
 	z-index: 3;
 }
 .typing-data .content {
