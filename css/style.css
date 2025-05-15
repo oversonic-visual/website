@@ -331,16 +331,16 @@ body.show-menu {
 	font-size: 14px;
 }
 .industry-01 {
-	background-image: url(../images/bg-industries-01-inv.jpg);
+	background-image: url(../images/bg-ind-01.jpg);
 }
 .industry-02 {
-	background-image: url(../images/bg-industries-02-inv.jpg);
+	background-image: url(../images/bg-ind-02.jpg);
 }
 .industry-03 {
-	background-image: url(../images/bg-industries-03-inv.jpg);
+	background-image: url(../images/bg-ind-03.jpg);
 }
 .industry-04 {
-	background-image: url(../images/bg-industries-04-inv.jpg);
+	background-image: url(../images/bg-ind-04.jpg);
 }
 .carousel-indicators {
 	margin-left: 0;
