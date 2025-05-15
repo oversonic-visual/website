@@ -671,6 +671,10 @@ footer a:hover {
 		padding-top: 96px;
 		padding-bottom: 96px;
 	}
+	.coda h4 {
+		margin-top: 210px;
+		margin-bottom: 240px;
+	}
 }
 @media (max-width: 1199px) {
 	.typing-data.in-page {
