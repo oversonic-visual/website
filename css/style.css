@@ -166,9 +166,9 @@ body.show-menu {
     overflow: hidden;
 }
 .typing-data {
-	height: 350px;
+	height: 200px;
 	position: relative;
-	margin-top: -350px;
+	margin-top: -200px;
 	z-index: 3;
 }
 .typing-data .content {
@@ -180,9 +180,14 @@ body.show-menu {
 .txt-type {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 0.8;
-    letter-spacing: -2px;
+    font-size: 18px;
+    line-height: 0.85;
+    letter-spacing: 0;
+    margin-left: -16px;
+    text-shadow: 1px 1px #111;
+}
+.typing-data.in-page .txt-type {
+	text-shadow: none;
 }
 .txt-type.txt-bigger {
     font-size: 64px;
@@ -264,6 +269,9 @@ body.show-menu {
 	border-bottom: 1px dotted #999;
 	height: 17px;
 	margin-left: 8px;
+}
+.table-sm * {
+	font-size: 14px;
 }
 .standard-content {
 	padding-top: 48px;
@@ -502,10 +510,6 @@ footer a:hover {
 }
 
 @media (min-width: 576px) {
-	.typing-data {
-		height: 250px;
-		margin-top: -250px;
-	}
 	.btn {
 		width: auto;
 	}
@@ -577,7 +581,8 @@ footer a:hover {
 	.txt-type {
 		line-height: 0.9;
 		font-size: 14px;
-		letter-spacing: 0;
+		margin-left: 0;
+		text-shadow: none;
 	}
 	.page-title {
 		height: 680px;
@@ -682,13 +687,8 @@ footer a:hover {
 		height: auto;
 	}
 	.typing-data.in-page .content {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	.typing-data.in-page .col-lg-6 .txt-type {
-		font-size: 16px;
-		letter-spacing: 0;
-		text-transform: none;
+		padding-top: 8px;
+		padding-bottom: 40px;
 	}
 }
 @media (max-width: 479px) {
