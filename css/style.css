@@ -664,6 +664,9 @@ footer a:hover {
 		height: 48px;
 		border-bottom: 4px solid transparent;
 	}
+	.carousel-item-main-content {
+		font-size: 18px;
+	}
 	footer .standard-content,
 	footer .standard-side {
 		padding-top: 96px;
