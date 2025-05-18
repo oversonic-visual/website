@@ -657,14 +657,12 @@ footer a:hover {
 		padding: 72px 96px;
 	}
 	.carousel:hover .carousel-indicators {
-		left: 96px;
-		right: 600px;
-		bottom: 96px;
+		left: 4px;
+		right: 4px;
 	}
 	.carousel:hover .carousel-indicators [data-bs-target] {
-		margin-right: 8px;
-		height: 8px;
-		border-radius: 20px;
+		height: 48px;
+		border-bottom: 4px solid transparent;
 	}
 	footer .standard-content,
 	footer .standard-side {
