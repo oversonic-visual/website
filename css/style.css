@@ -657,6 +657,8 @@ input[type="checkbox"]:checked + .checkbox-custom::after {
     font-weight: normal !important;
     padding: 4px 12px;
     border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 3px;
 }
 .note-link:hover {
 	background-color: #eaff13;
