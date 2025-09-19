@@ -201,6 +201,26 @@ document.getElementById('mobile-menu-closer').addEventListener('click', function
 
 /*
 *
+* apertura /chiusura menu in mobile
+*
+*/
+const scroller = document.getElementById('mobile-hero-scroller');
+if (scroller) {
+  scroller.addEventListener('click', function () {
+    window.scrollBy({
+      top: window.innerHeight,
+      left: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+
+
+
+
+/*
+*
 * visione del menu in base allo scroll (desktop)
 *
 */
