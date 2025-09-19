@@ -191,7 +191,8 @@ input:focus, textarea:focus, select:focus {
     align-items: center;
     border-radius: 5px;
 }
-.show-menu .mobile-menu-opener {
+.show-menu .mobile-menu-opener,
+.scroll-down .mobile-menu-opener {
 	right: -100px;
 }
 .mobile-menu-closer {
