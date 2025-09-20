@@ -201,7 +201,7 @@ document.getElementById('mobile-menu-closer').addEventListener('click', function
 
 /*
 *
-* apertura /chiusura menu in mobile
+* scroll down bottone homepage (mobile)
 *
 */
 const scroller = document.getElementById('mobile-hero-scroller');
@@ -214,8 +214,6 @@ if (scroller) {
     });
   });
 }
-
-
 
 
 
