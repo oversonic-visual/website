@@ -716,9 +716,13 @@ footer a:hover {
 	margin-top: 96px;
 	margin-bottom: 128px;
 }
-.coda small {
+.coda small, .coda small a {
 	color: #888;
-	font-size: 12px;
+	font-size: 11px;
+	text-decoration: none;
+}
+.coda small a:hover {
+	color: #fff;
 }
 @media (min-width: 576px) {
 	.btn {
@@ -823,6 +827,9 @@ footer a:hover {
 	}
 	.partners h6 {
 		font-size: 16px;
+	}
+	.coda small, .coda small a {
+		font-size: 12px;
 	}
 }
 @media (min-width: 1200px) {
