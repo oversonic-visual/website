@@ -593,14 +593,14 @@ input[type="checkbox"]:checked + .checkbox-custom::after {
     display: block;
 }
 
-#nl-name.nl-error,
-#nl-email.nl-error,
+#first-name.nl-error,
+#email.nl-error,
 #nl-label-privacy.nl-error {
     animation: blink-opacity 1s infinite;
 }
 
-#nl-name.nl-error,
-#nl-email.nl-error,
+#first-name.nl-error,
+#email.nl-error,
 #nl-label-privacy.nl-error .checkbox-custom {
 	border-color: #eaff13 !important;
 }

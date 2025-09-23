@@ -268,8 +268,8 @@ window.addEventListener("scroll", () => {
 */
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
-    const nameField = document.getElementById("nl-name");
-    const emailField = document.getElementById("nl-email");
+    const nameField = document.getElementById("first-name");
+    const emailField = document.getElementById("email");
     const privacyField = document.getElementById("nl-privacy");
     const privacyLabel = document.getElementById("nl-label-privacy");
 
