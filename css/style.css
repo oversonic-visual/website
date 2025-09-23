@@ -399,7 +399,7 @@ body.show-menu {
 	font-size: 24px;
 }
 .carousel-item {
-	background-size: cover;
+	background-size: cover !important;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background: linear-gradient(to top, #444, #111);
@@ -412,6 +412,9 @@ body.show-menu {
 }
 .carousel-item table * {
 	background: none;
+}
+.carousel-item td {
+	border-color: rgba(255,255,525,0.3);
 }
 .secondary-notes {
 	font-size: 14px;
