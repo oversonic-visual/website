@@ -727,6 +727,9 @@ footer a:hover {
 .coda small a:hover {
 	color: #fff;
 }
+.iubenda-tp-btn.iubenda-cs-preferences-link {
+	opacity: 0.4 !important;
+}
 @media (min-width: 576px) {
 	.btn {
 		width: auto;
