@@ -1,5 +1,13 @@
 /*
 *
+* visualizzazione anno corrente nel footer
+*
+*/
+document.getElementById("current-year").textContent = new Date().getFullYear();
+
+
+/*
+*
 * effetto type prima schermata in home page
 *
 */
